@@ -1,7 +1,7 @@
 /** Routes for users. */
 
 const express = require('express');
-const ExpressError = require('../helpers/ExpressError');
+const ExpressError = require('../helpers/expressError');
 const { ensureCorrectUser, authRequired } = require('../middleware/auth');
 const User = require('../models/User');
 const { validate } = require('jsonschema');

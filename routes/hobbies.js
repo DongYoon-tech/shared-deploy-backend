@@ -1,6 +1,6 @@
 
 const express = require('express');
-const ExpressError = require('../helpers/ExpressError');
+const ExpressError = require('../helpers/expressError');
 const { authRequired } = require('../middleware/auth');
 const Hobby = require('../models/Hobby');
 const { validate } = require('jsonschema');

@@ -2,7 +2,7 @@
 //need to be updated to address instead of hobby
 
 const express = require('express');
-const ExpressError = require('../helpers/ExpressError');
+const ExpressError = require('../helpers/expressError');
 const { authRequired } = require('../middleware/auth');
 const Address = require('../models/address');
 const { validate } = require('jsonschema');
