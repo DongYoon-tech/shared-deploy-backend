@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "meet_address": "San Francisco, CA",
+            "hobbies_id": 4
+        }
+    ],
+    "required": [
+        "hobbies_id"
+    ],
+    "properties": {
+        "meet_address": {
+            "$id": "#/properties/meet_address",
+            "type": "string",
+            "title": "The meet_address schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "San Francisco, CA"
+            ]
+        },
+        "hobbies_id": {
+            "$id": "#/properties/hobbies_id",
+            "type": "integer",
+            "title": "The hobbies_id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                4
+            ]
+        }
+    },
+    "additionalProperties": true
+}
