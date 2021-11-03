@@ -3,7 +3,7 @@
 const express = require('express');
 const cors = require("cors");
 
-const ExpressError = require('./helpers/ExpressError');
+const ExpressError = require('./helpers/expressError');
 
 const { authRequired } = require("./middleware/auth");
 const usersRoutes = require('./routes/users');
