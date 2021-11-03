@@ -2,7 +2,7 @@
 const express = require('express');
 const ExpressError = require('../helpers/expressError');
 const { authRequired } = require('../middleware/auth');
-const Hobby = require('../models/Hobby');
+const Hobby = require('../models/hobby');
 const { validate } = require('jsonschema');
 const hobbyNewSchema = require("../schemas/hobbyNew.json");
 const hobbyUpdateSchema = require("../schemas/hobbyUpdate.json");

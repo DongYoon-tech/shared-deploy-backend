@@ -1,6 +1,6 @@
 /** Routes for authentication. */
 
-const User = require("../models/User");
+const User = require("../models/user");
 const express = require("express");
 const ExpressError = require('../helpers/expressError');
 const router = new express.Router();

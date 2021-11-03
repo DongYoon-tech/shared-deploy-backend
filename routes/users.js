@@ -3,7 +3,7 @@
 const express = require('express');
 const ExpressError = require('../helpers/expressError');
 const { ensureCorrectUser, authRequired } = require('../middleware/auth');
-const User = require('../models/User');
+const User = require('../models/user');
 const { validate } = require('jsonschema');
 const userNewSchema = require("../schemas/userNew.json");
 const userUpdateSchema = require("../schemas/userUpdate.json");
