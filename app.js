@@ -25,11 +25,11 @@ app.use('/hobbies', hobbiesRoutes);
 app.use('/users', usersRoutes);
 app.use('/', authRoutes);
 
-app.use(function (req, res, next) {
-    const err = new ExpressError("Not Found", 404);
+// app.use(function (req, res, next) {
+//     const err = new ExpressError("Not Found", 404);
 
-    return next(err);
-});
+//     return next(err);
+// });
 
 app.use(function (err, req, res, next) {
     res.status(err.status || 500);
